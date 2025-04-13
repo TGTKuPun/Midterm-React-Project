@@ -1,0 +1,46 @@
+/* Điều chỉnh các icon pagination thành hình vuông */
+.swiper-pagination-bullet {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition:
+    transform 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
+}
+
+.swiper-pagination-bullet-active {
+  transform: scale(1.4);
+  opacity: 1;
+  border: 2px solid #ffffff;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 40px;
+  height: 40px;
+  background: none; /* loại bỏ nền */
+  border-radius: 0; /* loại bỏ hình tròn */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  cursor: pointer;
+  opacity: 0.6; /* mờ nhẹ */
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #ffe656;
+  opacity: 1;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
