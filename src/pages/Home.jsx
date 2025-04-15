@@ -1,4 +1,4 @@
-// Swiper core
+import React, { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {
   Navigation,
@@ -12,35 +12,28 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import Box from '@mui/material/Box';
-
-// Import Slide Component
 import Slide from '../components/Slide';
-
-// Style
 import '../assets/css/Home.css';
+import slidesJson from '../../data/slides.json';
 
-// Images
-import slide1 from '../assets/images/azurlane-banner-31fa6075.jpg';
-import slide2 from '../assets/images/arknights-banner-f282a3df.jpg';
-import slide3 from '../assets/images/mahjongsoul-banner-9576a239.jpg';
-import slide4 from '../assets/images/bluearchive-banner-5a55c939.jpg';
-import slide5 from '../assets/images/aethergazer-banner-f91f2697.jpg';
-
-// Images for title
-import title1 from '../assets/images/title-azurlane.png';
-import title2 from '../assets/images/title-arknights.png';
-import title3 from '../assets/images/title-mahjongsoul.png';
-import title4 from '../assets/images/title-bluearchive.png';
-import title5 from '../assets/images/title-aethergazer.png';
-
-// Image for pagination
-import icon1 from '../assets/images/azurlane-icon.jpg';
-import icon2 from '../assets/images/arknight-icon.png';
-import icon3 from '../assets/images/mahjongsoul-icon.jpg';
-import icon4 from '../assets/images/bluearchive-icon.png';
-import icon5 from '../assets/images/aether-icon.png';
+// Load image from 'images folder'
+const images = import.meta.glob('../assets/images/*', {
+  eager: true,
+  import: 'default',
+});
 
 export default function Home() {
+  const [slides, setSlides] = useState([]);
+
+  useEffect(() => {
+    const parsedSlides = slidesJson.slides.map((item) => ({
+      img: images[`../assets/images/${item.img}`],
+      titleImage: images[`../assets/images/${item.titleImage}`],
+      icon: images[`../assets/images/${item.icon}`],
+    }));
+    setSlides(parsedSlides);
+  }, []);
+
   return (
     <Box
       sx={{
@@ -52,43 +45,36 @@ export default function Home() {
         overflow: 'hidden',
       }}
     >
-      <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-        slidesPerView={1}
-        navigation
-        pagination={{
-          clickable: true,
-          renderBullet: (index, className) => {
-            const images = [icon1, icon2, icon3, icon4, icon5];
-            return `<span class="${className}" style="background-image: url(${images[index]}); background-size: cover; width: 55px; height: 55px; background-color: rgba(0, 0, 0, 0.5); background-position: center center; margin-bottom: 20px; border-radius: 15px"></span>`;
-          },
-        }}
-        scrollbar={{ draggable: true }}
-        autoplay={{
-          delay: 4000,
-          disableOnInteraction: false,
-        }}
-        className="swiper-fade"
-        style={{
-          height: '100%',
-        }}
-      >
-        {[
-          { img: slide1, titleImage: title1 },
-          { img: slide2, titleImage: title2 },
-          { img: slide3, titleImage: title3 },
-          { img: slide4, titleImage: title4 },
-          { img: slide5, titleImage: title5 },
-        ].map((slide, index) => (
-          <SwiperSlide key={index}>
-            <Slide
-              backgroundImage={slide.img}
-              altText={`Slide ${index + 1}`}
-              titleImage={slide.titleImage}
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      {slides.length > 0 && (
+        <Swiper
+          modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+          slidesPerView={1}
+          navigation
+          pagination={{
+            clickable: true,
+            renderBullet: (index, className) => {
+              return `<span class="${className}" style="background-image: url(${slides[index].icon}); background-size: cover; width: 55px; height: 55px; background-color: rgba(0, 0, 0, 0.5); background-position: center center; margin-bottom: 20px; border-radius: 15px"></span>`;
+            },
+          }}
+          scrollbar={{ draggable: true }}
+          autoplay={{
+            delay: 3500,
+            disableOnInteraction: false,
+          }}
+          className="swiper-fade"
+          style={{ height: '100%' }}
+        >
+          {slides.map((slide, index) => (
+            <SwiperSlide key={index}>
+              <Slide
+                backgroundImage={slide.img}
+                altText={`Slide ${index + 1}`}
+                titleImage={slide.titleImage}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      )}
     </Box>
   );
 }

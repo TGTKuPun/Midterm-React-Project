@@ -1,0 +1,29 @@
+{
+  "slides": [
+    {
+      "img": "azurlane-banner-31fa6075.jpg",
+      "titleImage": "title-azurlane.png",
+      "icon": "azurlane-icon.jpg"
+    },
+    {
+      "img": "arknights-banner-f282a3df.jpg",
+      "titleImage": "title-arknights.png",
+      "icon": "arknight-icon.png"
+    },
+    {
+      "img": "mahjongsoul-banner-9576a239.jpg",
+      "titleImage": "title-mahjongsoul.png",
+      "icon": "mahjongsoul-icon.jpg"
+    },
+    {
+      "img": "bluearchive-banner-5a55c939.jpg",
+      "titleImage": "title-bluearchive.png",
+      "icon": "bluearchive-icon.png"
+    },
+    {
+      "img": "aethergazer-banner-f91f2697.jpg",
+      "titleImage": "title-aethergazer.png",
+      "icon": "aether-icon.png"
+    }
+  ]
+}

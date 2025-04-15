@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Blue Archive",
+    "image": "card1.webp",
+    "genre": "Anime RPG",
+    "link": "",
+    "price": "Free"
+  },
+  {
+    "name": "Vindictus",
+    "image": "card2.webp",
+    "genre": "Action RPG",
+    "link": "",
+    "price": "208.000₫"
+  },
+  {
+    "name": "Mabinogi",
+    "image": "card3.webp",
+    "genre": "MMORPG",
+    "link": "",
+    "price": "Free"
+  },
+  {
+    "name": "Counter-Strike Nexon",
+    "image": "card4.webp",
+    "genre": "FPS",
+    "link": "",
+    "price": "Free"
+  },
+  {
+    "name": "The First Berserker: Khazan",
+    "image": "card5.webp",
+    "genre": "Hardcore Action RPG",
+    "link": "",
+    "price": "320.000₫"
+  },
+  {
+    "name": "MapleStory M",
+    "image": "card6.webp",
+    "genre": "MMORPG",
+    "link": "#",
+    "price": "105.000₫"
+  },
+  {
+    "name": "THE FINALS",
+    "image": "card7.webp",
+    "genre": "FPS",
+    "link": "",
+    "price": "705.000₫"
+  }
+]
