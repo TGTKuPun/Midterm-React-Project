@@ -37,7 +37,7 @@ export default function Home() {
   return (
     <Box
       sx={{
-        paddingTop: '60px',
+        paddingTop: '65px',
         paddingX: 2,
         width: '100%',
         margin: 0,
@@ -53,7 +53,7 @@ export default function Home() {
           pagination={{
             clickable: true,
             renderBullet: (index, className) => {
-              return `<span class="${className}" style="background-image: url(${slides[index].icon}); background-size: cover; width: 55px; height: 55px; background-color: rgba(0, 0, 0, 0.5); background-position: center center; margin-bottom: 20px; border-radius: 15px"></span>`;
+              return `<span class="${className}" style="background-image: url(${slides[index].icon}); background-size: cover; width: 65px; height: 65px; background-color: rgba(0, 0, 0, 0.5); background-position: center center; margin-bottom: 20px; border-radius: 15px"></span>`;
             },
           }}
           scrollbar={{ draggable: true }}

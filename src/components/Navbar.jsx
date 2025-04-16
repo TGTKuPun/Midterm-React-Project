@@ -76,7 +76,7 @@ export default function Navbar() {
 
   return (
     <AppBar position="fixed" sx={{ backgroundColor: '#000000' }}>
-      <Toolbar sx={{ height: '50px' }}>
+      <Toolbar sx={{ height: '60px' }}>
         <Box
           sx={{
             width: '100%',

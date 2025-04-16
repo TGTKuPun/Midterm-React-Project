@@ -13,7 +13,7 @@ import { useTheme } from '@mui/material/styles';
 
 export default function About() {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm')); // Kiểm tra màn hình nhỏ hơn 'sm'
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
     <Box
@@ -21,7 +21,7 @@ export default function About() {
         width: '100%',
         minHeight: '100vh',
         pt: '60px',
-        backgroundColor: '#fff',
+        backgroundColor: '#F4F4F4',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',

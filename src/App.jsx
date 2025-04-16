@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // components
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 // pages
 import Home from './pages/Home';
@@ -19,16 +20,19 @@ import Join from './pages/Join';
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/news" element={<News />} />
-        <Route path="/join" element={<Join />} />
-      </Routes>
-    </Router>
+    <>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/join" element={<Join />} />
+        </Routes>
+        <Footer></Footer>
+      </Router>
+    </>
   );
 }
 
