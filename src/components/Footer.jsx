@@ -3,7 +3,7 @@ import { Stack } from '@mui/material';
 import Typography from '@mui/material/Typography';
 
 // images
-import logo from '../assets/images/yostar-icon.png';
+import logo from '/assets/images/yostar-icon.png';
 
 export default function Footer() {
   return (

@@ -1,0 +1,44 @@
+{
+  "news_detail": [
+    {
+      "id": "1",
+      "image_1": "new1.png",
+      "image_2": "news_detail_5.jpeg",
+      "image_3": "news_detail_6.jpeg",
+      "title": "Stella Sora: Anime-Style Action Adventure RPG Official trailer released!",
+      "subtitle": "Pre-registration is now open for all players!",
+      "desc_1": "Yostar has officially unveiled its new cross-platform RPG \"Stella Sora\" (PC / Android / iOS) today. The announcement also included an official trailer and gameplay demo. Global pre-registration is now available on the official website.",
+      "desc_2": "\"Stella Sora\" is a top-down, light-action adventure RPG designed to deliver an innovative and engaging combat experience through its fantastic, episodic narrative. Players can look forward to embarking on a journey full of fun surprises, feeling the thrill of action-packed, randomized adventures, and exploring the fantasy world of Nova at their own pace.",
+      "sub_title_1": "Encounter Charming Girls in a Fantasy Realm",
+      "desc_3": "The narrative of \"Stella Sora\" revolves around the player's adventures as the \"Tyrant\" alongside the \"New Star Guild\"—a trio of girls with distinct personalities, united by their struggles and love for adventure. As their journey unfolds, players will also encounter other charming girls known as \"Trekkers.\" Discover their stories, form new bonds, and team up for grand adventures to uncover the secrets of this fantasy world.",
+      "sub_title_2": "Enjoy relaxing and exhilarating combat gameplay",
+      "desc_4": "Yostar hope to provide a refreshing gaming experience with comprehensive character building systems and unique combat mechanics. By adopting auto attack and manual dodge mechanics, the game leaves players free to focus more on strategizing in our highly randomized gameplay. This approach elevates the anticipation of gear and talent matching, the satisfaction of character synergies, and the thrill of fast-paced combat to new heights.",
+      "linkvideo_1": "https://www.youtube.com/watch?v=kqItc-1ZdTw",
+      "follow": "Follow \"Stella Sora\":",
+      "link_home": "https://stellasora.global/",
+      "link_twiter": "https://x.com/StellaSoraEN",
+      "link_facebook": "https://www.facebook.com/StellaSoraEN/",
+      "link_yt": "https://www.youtube.com/@StellaSoraEN"
+    },
+    {
+      "id": "2",
+      "image_1": "new2.png",
+      "image_2": "news_detail_8.jpeg",
+      "image_3": "news_detail_4.jpeg",
+      "title": "Yostar Unveils Heaven Burns Red by WRIGHT FLYER STUDIOS and VISUAL ARTS/Key at Anime Expo 2024: A New Adventure Awaits!",
+      "subtitle": "Discover the Intricate World of Heaven Burns Red",
+      "desc_1": "July 4, 2024 -China - Publisher Yostar Games is thrilled to announce the English Version of its latest title, Heaven Burns Red, at Anime Expo 2024. Co-developed by WRIGHT FLYER STUDIOS and VISUAL ARTS/Key, this story-driven RPG was first released in 2022 in Japan. It has garnered major accolades at the Google Play Best of 2022 Awards, claiming titles such as \"Best Game 2022,\" \"User Voting Category Game Category Grand Prize,\" and \"Story Category Award.\"  ",
+      "desc_2": "",
+      "sub_title_1": "Discover the Intricate World of Heaven Burns Red",
+      "desc_3": "Besieged by mysterious life-forms known as \"the Phage,\" Earth teeters on the brink of ruin. All human weaponry proved futile against the Phage's onslaught, and without any means to fight back, humanity has been forced to retreat. Land was forsaken, and nations were erased in the ensuing chaos. Now, over half of the Earth's surface has been lost to the Phage.",
+      "sub_title_2": "Highlights from Heaven Burns Red",
+      "desc_4": "Heaven Burns Red is a story-driven role-playing game co-developed by WRIGHT FLYER STUDIOS and VISUAL ARTS/Key. This title is Jun Maeda's first completely new game in 15 years. As a narrative-centric RPG, Heaven Burns Red uses a timeline narrative design to advance the story, breaking new ground in the RPG genre by offering an engaging and evolving storyline driven by player choices. Players will experience fierce battles through the eyes of Ruka Kayamori as well as the value of each day in the deeply immersive world of Heaven Burns Red. ",
+      "linkvideo_1": "https://www.youtube.com/watch?v=rd-xsR3GRsE",
+      "follow": "Follow \"Heaven Burns Red\":",
+      "link_home": "https://heavenburnsred.yo-star.com/#/",
+      "link_facebook": "https://x.com/hbr_official_en",
+      "link_twiter": "https://www.facebook.com/hbr.en.official/",
+      "link_yt": "https://www.youtube.com/channel/UCGtZ9Sv2v9hoB9fUm8hNRtg"
+    }
+  ]
+}

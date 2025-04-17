@@ -1,11 +1,13 @@
 {
   "news": [
     {
+      "id": "1",
       "image": "new1.png",
       "title": "Stella Sora: Anime-Style Action Adventure RPG Official trailer released!",
       "subtitle": "Pre-registration is now open for all players!"
     },
     {
+      "id": "2",
       "image": "new2.png",
       "title": "Yostar Unveils Heaven Burns Red by WRIGHT FLYER STUDIOS and VISUAL ARTS/Key at Anime Expo 2024: A New Adventure Awaits!",
       "subtitle": "Discover the Intricate World of Heaven Burns Red"

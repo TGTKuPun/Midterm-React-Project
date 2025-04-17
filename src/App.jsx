@@ -6,6 +6,7 @@ import '@fontsource/roboto/700.css';
 import './App.css';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Box from '@mui/material/Box';
 
 // components
 import Navbar from './components/Navbar';
@@ -16,23 +17,31 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Products from './pages/Products';
 import News from './pages/News';
-import Join from './pages/Join';
+import NewDetail from './pages/NewDetail';
 
 function App() {
   return (
-    <>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/join" element={<Join />} />
-        </Routes>
-        <Footer></Footer>
-      </Router>
-    </>
+    <Box
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        minHeight: '100vh',
+      }}
+    >
+      <Box sw={{ flex: 1 }}>
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/news" element={<News />} />
+            <Route path="/news/:id" element={<NewDetail />} />
+          </Routes>
+          <Footer></Footer>
+        </Router>
+      </Box>
+    </Box>
   );
 }
 

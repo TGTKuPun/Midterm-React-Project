@@ -1,26 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import ReviewCard from '../components/ReviewCard';
 import Typography from '@mui/material/Typography';
+import ReviewCard from '../components/ReviewCard';
 import cardsJson from '../../data/cards.json';
 
 export default function Products() {
-  // State to save
   const [cards, setCards] = useState([]);
-
-  // Load image from 'images folder'
-  const images = import.meta.glob('../assets/images/card[0-9]+.webp', {
-    eager: true,
-    import: 'default',
-  });
 
   useEffect(() => {
     const parsedCards = cardsJson.map((item) => ({
       ...item,
-      image: images[`../assets/images/${item.image}`],
+      image: `/assets/images/${item.image}`, // Dùng ảnh từ public folder
     }));
-
     setCards(parsedCards);
   }, []);
 

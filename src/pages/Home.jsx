@@ -13,23 +13,17 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import Box from '@mui/material/Box';
 import Slide from '../components/Slide';
-import '../assets/css/Home.css';
+import '../css/Home.css';
 import slidesJson from '../../data/slides.json';
-
-// Load image from 'images folder'
-const images = import.meta.glob('../assets/images/*', {
-  eager: true,
-  import: 'default',
-});
 
 export default function Home() {
   const [slides, setSlides] = useState([]);
 
   useEffect(() => {
     const parsedSlides = slidesJson.slides.map((item) => ({
-      img: images[`../assets/images/${item.img}`],
-      titleImage: images[`../assets/images/${item.titleImage}`],
-      icon: images[`../assets/images/${item.icon}`],
+      img: `/assets/images/${item.img}`,
+      titleImage: `/assets/images/${item.titleImage}`,
+      icon: `/assets/images/${item.icon}`,
     }));
     setSlides(parsedSlides);
   }, []);

@@ -3,7 +3,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Box from '@mui/material/Box';
-import logo from '../assets/images/yostar-icon.png';
+import logo from '/assets/images/yostar-icon.png';
 import IconButton from '@mui/material/IconButton';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
@@ -42,8 +42,6 @@ export default function Navbar() {
           return '/products';
         case 'News':
           return '/news';
-        case 'Join':
-          return '/join';
         default:
           return '/';
       }
@@ -52,7 +50,7 @@ export default function Navbar() {
     navigate(path);
   };
 
-  const menuItems = ['Home', 'About', 'Products', 'News', 'Join'];
+  const menuItems = ['Home', 'About', 'Products', 'News'];
 
   // Tạo hàm lấy route tương ứng với item
   const getPathFromItem = (item) => {
@@ -65,8 +63,6 @@ export default function Navbar() {
         return '/products';
       case 'News':
         return '/news';
-      case 'Join':
-        return '/join';
       default:
         return '/';
     }

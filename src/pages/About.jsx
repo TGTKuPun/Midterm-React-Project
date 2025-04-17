@@ -1,7 +1,7 @@
 // images
-import about_title from '../assets/images/about-en-title.png';
-import about_bg from '../assets/images/about.png';
-import about_bg_mobile from '../assets/images/about-phone.png';
+import about_title from '/assets/images/about-en-title.png';
+import about_bg from '/assets/images/about.png';
+import about_bg_mobile from '/assets/images/about-phone.png';
 
 // Material-UI
 import Box from '@mui/material/Box';

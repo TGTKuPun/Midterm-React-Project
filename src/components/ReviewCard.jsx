@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Card, CardMedia, Typography, Box, Button } from '@mui/material';
 import AppleIcon from '@mui/icons-material/Apple';
 import AndroidIcon from '@mui/icons-material/Android';
-import '../assets/css/ReviewCard.css';
+import '../css/ReviewCard.css';
 
 export default function ReviewCard({ image, title, genre, link, price }) {
   return (

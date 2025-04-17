@@ -1,0 +1,45 @@
+.review-card {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Ảnh */
+.review-card__image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.review-card__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Xám nhạt */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.review-card__action {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+/* Hover: hiện overlay và button */
+.review-card:hover .review-card__overlay,
+.review-card:hover .review-card__action {
+  opacity: 1;
+}
+
+.review-card:hover .review-card__image {
+  filter: blur(3px);
+  transition: filter 0.3s ease;
+}
