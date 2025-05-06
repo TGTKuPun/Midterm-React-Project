@@ -52,7 +52,7 @@ export default function Navbar() {
 
   const menuItems = ['Home', 'About', 'Products', 'News'];
 
-  // Tạo hàm lấy route tương ứng với item
+  // Function to get the route corresponding to the menu item
   const getPathFromItem = (item) => {
     switch (item) {
       case 'Home':
@@ -69,6 +69,15 @@ export default function Navbar() {
   };
 
   const currentPath = location.pathname;
+
+  // Function to determine if the menu item is active
+  const isActive = (item) => {
+    return (
+      currentPath === getPathFromItem(item) || // Exact match
+      (item === 'News' && currentPath.startsWith('/news')) ||
+      (item === 'Products' && currentPath.startsWith('/products')) // Match for /news and /news/:id
+    );
+  };
 
   return (
     <AppBar position="fixed" sx={{ backgroundColor: '#000000' }}>
@@ -112,14 +121,10 @@ export default function Navbar() {
                     onClick={() => handleItemClick(item)}
                     disableRipple
                     sx={{
-                      borderBottom:
-                        currentPath === getPathFromItem(item)
-                          ? '2px solid #FFE656'
-                          : 'none',
-                      color:
-                        currentPath === getPathFromItem(item)
-                          ? '#ffffff'
-                          : '#848383',
+                      borderBottom: isActive(item)
+                        ? '2px solid #FFE656'
+                        : 'none', // Apply active style
+                      color: isActive(item) ? '#ffffff' : '#848383', // Active color
                       '&:hover': {
                         borderBottom: '2px solid #FFE656',
                         backgroundColor: 'transparent',
@@ -143,14 +148,10 @@ export default function Navbar() {
                   disableRipple
                   sx={{
                     borderRadius: 0,
-                    borderBottom:
-                      currentPath === getPathFromItem(item)
-                        ? '2px solid #FFE656'
-                        : '2px solid transparent',
-                    color:
-                      currentPath === getPathFromItem(item)
-                        ? '#ffffff'
-                        : '#848383',
+                    borderBottom: isActive(item)
+                      ? '2px solid #FFE656'
+                      : '2px solid transparent', // Apply active style
+                    color: isActive(item) ? '#ffffff' : '#848383', // Active color
                     '&:hover': {
                       borderBottom: '2px solid #FFE656',
                       backgroundColor: 'transparent',

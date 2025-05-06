@@ -1,0 +1,109 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "title": "Blue Archive",
+      "desc": {
+        "part1": "A Story That’s Straight from the Heart.",
+        "part2": "Blue Archive is a fantasy RPG that features stunning art and a heartwarming anime journey through the joys of youth, the challenges of academy life, and epic military battles!",
+        "part3": "You have been appointed as an advisor to the Federal Investigation Club, Schale, located in Kivotos. This massive city is home to several high school academies rife with drama and teeming with possibility. There’s never a dull moment as you help these extraordinary anime girls resolve their differences. Live the gacha life and build special memories with each and every one of them in this epic journey!"
+      },
+      "image": "card1.webp",
+      "rating": 4.6,
+      "reviews": "132K",
+      "downloads": "5M+",
+      "age": "16+",
+      "tags": ["RPG", "Offline", "Adventure"]
+    },
+    {
+      "id": "4",
+      "title": "Counter-Strike Nexon: Studio",
+      "desc": {
+        "part1": "Classic FPS Reimagined.",
+        "part2": "Counter-Strike Nexon: Studio brings the iconic CS gameplay into a new light with both PvP and PvE modes, including zombies, bosses, and custom maps.",
+        "part3": "From traditional bomb-defusal and hostage rescue missions to survival horror scenarios, this title offers a massive range of content for fans of every type. Create your own maps and mods or play countless user-generated content available online."
+      },
+      "image": "card4.webp",
+      "rating": 4.2,
+      "reviews": "85K",
+      "downloads": "10M+",
+      "age": "18+",
+      "tags": ["FPS", "Online", "Action", "Multiplayer"]
+    },
+    {
+      "id": "2",
+      "title": "Vindictus",
+      "desc": {
+        "part1": "Intense Action, Brutal Combat.",
+        "part2": "Vindictus is an action MMORPG that features cinematic combat, powerful weapons, and a dark fantasy world.",
+        "part3": "Take on challenging bosses with combo-based mechanics and fluid movement. Choose your hero and fight through epic dungeons in a war-torn world filled with myth and vengeance."
+      },
+      "image": "card2.webp",
+      "rating": 4.4,
+      "reviews": "96K",
+      "downloads": "3M+",
+      "age": "18+",
+      "tags": ["MMORPG", "Action", "Online", "Fantasy"]
+    },
+    {
+      "id": "3",
+      "title": "Mabinogi",
+      "desc": {
+        "part1": "Live Your Fantasy Life.",
+        "part2": "Mabinogi is a fantasy life MMORPG that offers a unique blend of combat, crafting, music, farming, and social interaction.",
+        "part3": "Create your character’s story in a whimsical anime-inspired world. With endless customization and role-play options, Mabinogi allows you to live your second life the way you want."
+      },
+      "image": "card3.webp",
+      "rating": 4.5,
+      "reviews": "120K",
+      "downloads": "6M+",
+      "age": "12+",
+      "tags": ["MMORPG", "Fantasy", "Life Sim", "Anime"]
+    },
+    {
+      "id": "5",
+      "title": "The First Berserker: Khazan",
+      "desc": {
+        "part1": "A Brutal Soul-like Adventure.",
+        "part2": "Khazan tells the story of a disgraced general seeking vengeance in a decaying empire, featuring intense boss fights and dark storytelling.",
+        "part3": "Unleash devastating combos and brutal weapons as you carve a path through betrayal and war. A hardcore action RPG experience with beautiful visuals and deep lore."
+      },
+      "image": "card5.webp",
+      "rating": 4.7,
+      "reviews": "40K",
+      "downloads": "1M+",
+      "age": "18+",
+      "tags": ["Action", "Soulslike", "RPG", "Story-rich"]
+    },
+    {
+      "id": "6",
+      "title": "MapleStory M",
+      "desc": {
+        "part1": "Maple World in Your Pocket.",
+        "part2": "MapleStory M brings the iconic 2D MMORPG to mobile devices with fast-paced combat and colorful adventures.",
+        "part3": "Team up with friends, battle epic bosses, and customize your characters in a nostalgic yet modern take on the classic MapleStory experience."
+      },
+      "image": "card6.webp",
+      "rating": 4.3,
+      "reviews": "160K",
+      "downloads": "15M+",
+      "age": "12+",
+      "tags": ["MMORPG", "Mobile", "Anime", "Adventure"]
+    },
+    {
+      "id": "7",
+      "title": "THE FINALS",
+      "desc": {
+        "part1": "A Destructive Arena Shooter.",
+        "part2": "THE FINALS is a fast-paced multiplayer FPS where teams battle it out in fully destructible arenas on live TV.",
+        "part3": "Choose your build, use the environment to your advantage, and adapt your strategy in chaotic, ever-changing battlegrounds. Style and skill both matter in this adrenaline-fueled competition."
+      },
+      "image": "card7.webp",
+      "rating": 4.6,
+      "reviews": "200K",
+      "downloads": "8M+",
+      "age": "16+",
+      "tags": ["FPS", "Multiplayer", "Destruction", "Competitive"]
+    }
+  ]
+}

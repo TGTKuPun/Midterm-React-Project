@@ -1,10 +1,8 @@
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import news_detailJson from '../../data/news_detail.json';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import Grid from '@mui/material/Grid';
-import { Directions } from '@mui/icons-material';
-import { Stack } from '@mui/material';
+import { Stack, Button } from '@mui/material';
 
 // icons
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -13,6 +11,7 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 
 export default function NewDetail() {
   const { id } = useParams();
+  const navigate = useNavigate();
 
   const news_item = news_detailJson.news_detail.find((item) => item.id === id);
 
@@ -227,6 +226,16 @@ export default function NewDetail() {
             <YouTubeIcon sx={{ color: '#FF0000' }} />
           </Typography>
         </Stack>
+
+        <Box sx={{ pb: 2 }}>
+          <Button
+            variant="outlined"
+            onClick={() => navigate(-1)}
+            sx={{ mb: 2, color: '#FFD700', border: '1px solid #FFD700', ps: 2 }}
+          >
+            ← Go Back
+          </Button>
+        </Box>
       </Box>
     </Box>
   );

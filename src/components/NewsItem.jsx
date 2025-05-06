@@ -15,11 +15,20 @@ export default function New({ id, image, title, subtitle }) {
     >
       <Grid container spacing={4} alignItems="flex-start">
         {/* Left */}
-        <Grid item xs={4}>
-          <img
+        <Grid item xs={4} sx={{ display: { xs: 'none', sm: 'block' } }}>
+          <Box
+            component="img"
             src={image}
             alt="image"
-            style={{ width: '100%', borderRadius: 5, objectFit: 'cover' }}
+            sx={{
+              width: '100%',
+              borderRadius: 1,
+              objectFit: 'cover',
+              transition: 'filter 0.3s ease',
+              '&:hover': {
+                filter: 'brightness(75%)',
+              },
+            }}
           />
         </Grid>
 

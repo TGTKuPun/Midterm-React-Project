@@ -13,6 +13,7 @@ const Slide = ({ backgroundImage, altText, titleImage }) => {
           height: '100vh',
           objectFit: 'cover',
           objectPosition: 'center',
+          transition: 'background-image 0.5s ease',
         }}
       />
 
@@ -36,6 +37,22 @@ const Slide = ({ backgroundImage, altText, titleImage }) => {
           }}
         />
       </Box>
+
+      {/* Responsive Background Image for Mobile */}
+      <Box
+        sx={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          display: { xs: 'block', sm: 'none' },
+          height: '100vh',
+        }}
+      />
     </Box>
   );
 };
