@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 nelify.toml
+.npm
 
 # Editor directories and files
 .vscode/*
